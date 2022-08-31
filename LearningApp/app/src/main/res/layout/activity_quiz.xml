@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="372dp"
+        android:layout_height="429dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a" />
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="48dp"
+        android:text="Score"
+        android:textColor="@color/teal_700"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="124dp"
+        android:orientation="vertical"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="U"></Button>
+
+            <Button
+                android:id="@+id/two"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="V"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/three"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="W"></Button>
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:text="X"></Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="48dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/alpha"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
